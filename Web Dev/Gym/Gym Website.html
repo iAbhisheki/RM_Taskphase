@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-At-Feet</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+<style>
+     header::before{
+        background: url('Gym2.jpg');
+        background-size: cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+     }
+    body {
+        font-family: 'Mochiy Pop P One', sans-serif;
+       
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+      
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 24px;
+    }
+
+    .left img {
+        width: 66px;
+    }
+
+    .leftcontent {
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 14px auto;
+        width: 52%;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+
+    }
+    
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 50px 40px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #96a7d7;
+        ;
+    }
+
+    .right {
+        /* border: 2px solid pink; */
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 24px;
+    }
+
+    .btn {
+        font-family: 'Mochiy Pop P One', sans-serif;
+        margin: 6px 4px;
+        font-size: 14px;
+        border: 2px solid #46466f;
+        border-radius: 10px;
+        background-color: #404555;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid whitesmoke;
+        margin: 82px 114px;
+        padding: 38px;
+        width: 32%;
+        border-radius: 21px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+
+    .form-group input {
+        font-family: 'Mochiy Pop P One', sans-serif;
+        text-align: center;
+        display: block;
+        width: 441px;
+        padding: 0px;
+        border: 2px solid black;
+        margin: 0px auto;
+        font-size: 19px;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <header>
+        
+
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div class="leftcontent">
+                <div style="color: #96a7d7;">Fit</div>
+                <div style="color: gray;">At</div>
+                <Div style="color:#475350;">Feet</Div>
+            </div>
+        </div>
+
+
+        <div class="mid">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Challenges</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym at lucknow</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

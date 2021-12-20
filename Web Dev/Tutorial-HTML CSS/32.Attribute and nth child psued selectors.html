@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input{
+            display: block;
+        }
+
+
+        /* This is a psuedo selector which will apply css to all elements whose input type is text  */
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid saddlebrown;
+        }
+        
+
+        /* This is a psuedo selector which will apply css to all elements who have a target in its anchor tag no matter what is the target */
+        a[target]{
+            font-size: 44px;
+            color: violet;
+        }
+
+        /* This is a psuedo selector which will apply css to all elements who have target _self in its anchor tag  */
+        a[target='_self']{
+            font-size: 14px;
+            color: rgb(13,22,151);
+        }
+
+        /* This is a psuedo selector which will apply css to all elements whose input type is email */
+        input[type='email']{
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        /* This will apply css to third child */
+        li:nth-child(3){
+            color: cyan;
+        }
+
+        li:nth-child(2n+0){
+            color: red;
+        }
+
+
+        li:nth-child(3n+3){
+            color: red;
+        }
+
+        /* To apply on every odd child  */
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+
+        /* To apply on every even child  */
+        li:nth-child(even){
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- /* here target is an attribute */ -->
+        <h1><a href="http://google.com" target="_blank"></a>Go to google</h1>
+        <h1><a href="http://facebook.com" target="_self"></a>Go to facebook</h1>
+        <form action="" class="form-control">
+
+
+            <!-- /* here input is an attribute */ -->
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your Password">
+            <input type="Submit" value="Submit">
+        </form>
+        <ul>
+            <li class="classs" id="item-1">item-1</li>
+            <li class="classs" id="item-2">item-2</li>
+            <li class="classs" id="item-3">item-3</li>
+            <li class="classs" id="item-4">item-4</li>
+            <li class="classs" id="item-5">item-5</li>
+            <li class="classs" id="item-6">item-6</li>
+            <li class="classs" id="item-7">item-7</li>
+            <li class="classs" id="item-8">item-8</li>
+            <li class="classs" id="item-9">item-9</li>
+            <li class="classs" id="item-10">istem-10</li>
+        </ul>
+    </div>
+</body>
+</html>

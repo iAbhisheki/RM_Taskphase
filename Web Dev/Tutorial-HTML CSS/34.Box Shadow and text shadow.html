@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+
+        /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+        box-shadow: 14px -6px 10px 9px #c1b54dc4
+    }
+    .card h2{
+        /* text-shadow: 3px 4px red; */
+        /* text-shadow: 3px 2px 2px white  ; */
+        text-shadow: -3px -2px 2px white ;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sed, soluta explicabo consectetur fugiat obcaecati qui voluptatem debitis facilis ut natus reiciendis magni. Dicta laudantium ratione quo quos explicabo asperiores, beatae perferendis eum sunt!
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti rem consequuntur hic illum. Ut dolor aliquid, accusamus veritatis dignissimos ratione possimus, excepturi et consectetur mollitia officia eaque? Ratione cum ea voluptatem dicta error?
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis voluptates nostrum totam itaque iure dolore maxime! Delectus beatae sed, ut perspiciatis dignissimos esse, unde obcaecati expedita consectetur nisi iusto, facilis hic enim quasi.</p>
+        </div>
+    </div>
+</body>
+</html>

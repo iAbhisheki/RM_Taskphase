@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is html Forms tutorial</h2>
+    <form action="backend.php">
+        <!-- When we use label than in the site when we click,here say,name then it will take me to its dialogue box -->
+        <!-- for and name should be same in lable -->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+           Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+           bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+             <!-- By using checked keyword here it appears eligibility checked by default  -->
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked> 
+        </div>
+        <br>
+        <div>
+            <!-- By using same name for gender we can only select one of them and not all of them -->
+           Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+           Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+           Write about yourself: <br> <textarea name="myText" id="" cols="90" rows="10" placeholder="Bio"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

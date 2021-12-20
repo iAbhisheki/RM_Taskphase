@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid:Creating rows and Gaps</title>
+    <style>
+        .grid {
+            display: grid;
+            /* fr divides in fraction */
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            grid-template-columns: (4, 2fr);
+            grid-gap: 1rem;
+        }
+        
+        .box {
+            background-color: rgb(238, 128, 128);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">THIS IS BOX-1</div>
+        <div class="box">THIS IS BOX-2</div>
+        <div class="box">THIS IS BOX-3</div>
+        <div class="box">THIS IS BOX-4</div>
+        <div class="box">THIS IS BOX-5</div>
+        <div class="box">THIS IS BOX-6</div>
+        <div class="box">THIS IS BOX-7</div>
+        <div class="box">THIS IS BOX-8</div>
+        <div class="box">THIS IS BOX-9</div>
+        <div class="box">THIS IS BOX-10</div>
+    </div>
+</body>
+
+</html>
