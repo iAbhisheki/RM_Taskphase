@@ -5,9 +5,7 @@
     Factors of 220 1 + 2+ 4+ 5+ 10+ 11+20 +22+44+55+110 = 284
     Factors of 284 1 + 2+ 4+ 71+142 = 220  */
 
-/* #include <iostream>
-#include <cmath> */
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
  
 int ProDivSum(int n)

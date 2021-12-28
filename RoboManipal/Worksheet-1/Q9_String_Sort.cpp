@@ -19,16 +19,33 @@ Output: act
 #include<bits/stdc++.h>
 using namespace std;
  
-void sortString(string &str)
+
+void sortString(string s)
 {
-   sort(str.begin(), str.end());
-   cout << str;
+    
+     
+    int i, j, length;
+    length = s.length();
+    char ch,str[length+1];
+    strcpy(str,s.c_str());
+    
+    for(i=0; i<length; i++)
+    {
+        for(j=0; j<(length-1); j++)
+        {
+            if(str[j]>str[j+1])
+            {
+                ch = str[j];
+                str[j] = str[j+1];
+                str[j+1] = ch;
+            }
+        }
+        
+    }
+    cout<<str<<endl;
+
+   
 }
-
-
-void printArraystring(string,int);
- 
-
 void sortlength(string s[], int n)
 {
     for (int i=1 ;i<n; i++)
@@ -50,13 +67,13 @@ void sortlength(string s[], int n)
 void printArraystring(string str[], int n)
 {
     for (int i=0; i<n; i++)
-        cout << str[i] << " ";
+        cout << str[i] << " "<<endl;
 }
  
 int main()
 {
     int N=0;
-    string str[N];int length;
+    string str[100];string x[100];
     cout<<"Enter number of Words: ";
     cin>>N;
 
@@ -64,14 +81,18 @@ int main()
     for (int i = 0; i < N; i++)
     {
         cin>>str[i];
-        sortString(str[i]);
+      
         
     }
-    length = sizeof(str)/sizeof(str[0]);
-        sortlength(str,length);
-
-    printArraystring(str,length );
+    sortlength(str,N);
+    for (int j = 0; j < N; j++)
+    {
+         sortString(str[j]);
+    }
     
     
+    
+    
+ 
     return 0;
 }
