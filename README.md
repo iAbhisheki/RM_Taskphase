@@ -17,3 +17,12 @@ This is my RoboManipal Taskphase.Here i will upload my personal as well as Robom
 3. Read about GSAP and React.js .
 4.Made a Resposinve Food Delivery Website's front page.
 5.Made a GYM website.
+
+
+- Date:04/01/22 - 08/01/2022
+1. Completed Worksheet 3.
+2. Read about DC Motor and Motor drivers such as MDD10A and L239D.
+3. Made circuits with DC Motor and Motor driver L239D on TinkerCad.
+4. Learned Illustrator.
+
+
